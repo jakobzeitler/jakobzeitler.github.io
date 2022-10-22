@@ -9,7 +9,7 @@ profile:
   image: jakob1.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>UCL, London, UK</p>
+    <p>Me and big maths.</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

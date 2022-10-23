@@ -51,7 +51,7 @@
                   {%- endif -%}
                 </a>
               </li>
-              {% if site.blog_nav_title %}
+              {% if False and site.blog_nav_title %}
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
                 <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
@@ -61,6 +61,12 @@
                 </a>
               </li>
               {%- endif %}
+
+		<li class="nav-item">
+                <a class="nav-link" href="https://docs.google.com/document/d/16pQXlostjaAK4eobraPlzx-IPaJbUXoJ0Bw-38_9S5o/edit?usp=sharing">			CV
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
 
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
@@ -94,15 +100,16 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
-              {%- if site.enable_darkmode %}
 
-              <!-- Toogle theme mode -->
+              {%- if site.enable_darkmode %}
+              <!-- Toogle theme mode 
               <li class="toggle-container">
                 <button id="light-toggle" title="Change theme">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </button>
               </li>
+		-->
               {%- endif %}
             </ul>
           </div>
